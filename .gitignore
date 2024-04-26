@@ -1,0 +1,30 @@
+# python generated files
+__pycache__/
+*.so
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*target
+
+# venv
+.venv
+.coverage
+auth
+
+poetry.lock
+package-lock.json
+__pycache__
+env
+node_modules
+.vagrant
+\#*\#
+*~
+*egg-info
+*.pyc
+tmp
+.tmp
+activate.sh
+keys.sh
+.Trash*
