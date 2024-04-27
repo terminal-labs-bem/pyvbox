@@ -1,7 +1,7 @@
 from . import settings
 from . import core, app
 
-from .core import initapp, reestablishapp
+from .core import initapp, showapp, reestablishapp
 
 
 def main():
@@ -10,4 +10,5 @@ def main():
 
 
 def info():
-    return "basic info"
+    appcontext = core.appcontext
+    return showapp(appcontext)

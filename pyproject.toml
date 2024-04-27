@@ -16,12 +16,13 @@ dependencies = [
     "lowkit @ git+https://github.com/terminal-labs-bem/lowkit.git",
     "highkit @ git+https://github.com/terminal-labs-bem/highkit.git",
     "dllist>=1.1.0",
+    "toml>=0.10.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [project.scripts]
-"pyvbox" = "pyvbox:main"
+pyvbox = 'pyvbox.ux.cli:cli'
 
 [build-system]
 requires = ["hatchling"]

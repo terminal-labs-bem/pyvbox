@@ -59,3 +59,5 @@ setuptools==69.5.1
     # via pyvbox
 texttable==1.7.0
     # via pyvbox
+toml==0.10.2
+    # via pyvbox

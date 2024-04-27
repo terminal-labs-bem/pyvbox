@@ -188,8 +188,7 @@ class AppContext(Immutable):
         )
         self.platform = str(platform.platform())
 
-
-def initapp(appcontext):
+def showapp(appcontext):
     setup_workingset()
     assert os.path.exists(".tmp")
     assert os.path.exists(os.getcwd() + "/.tmp")
@@ -232,7 +231,14 @@ def initapp(appcontext):
             ["platform", appcontext.platform],
         ]
     )
-    print(t.draw())
+    return t.draw()
+
+def initapp(appcontext):
+    setup_workingset()
+    assert os.path.exists(".tmp")
+    assert os.path.exists(os.getcwd() + "/.tmp")
+    assert os.path.exists(".tmp/storage")
+    assert len(os.listdir(".tmp/storage")) == 10
 
     ## PYTHONPYCACHEPREFIX
     ## location of site-packages
@@ -308,9 +314,9 @@ def initapp(appcontext):
     dls = sorted(dls)
     # for dl in dls:
     #    print(os.path.abspath(dl))
-    for name, values in vars(settings).items():
-        if "__" not in name:
-            print(name, values)
+    # for name, values in vars(settings).items():
+        # if "__" not in name:
+            # print(name, values)
 
 
 def reestablishapp():
