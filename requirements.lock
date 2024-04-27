@@ -61,3 +61,5 @@ texttable==1.7.0
     # via pyvbox
 toml==0.10.2
     # via pyvbox
+tqdm==4.66.2
+    # via pyvbox

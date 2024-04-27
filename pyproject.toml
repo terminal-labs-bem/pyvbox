@@ -17,6 +17,7 @@ dependencies = [
     "highkit @ git+https://github.com/terminal-labs-bem/highkit.git",
     "dllist>=1.1.0",
     "toml>=0.10.2",
+    "tqdm>=4.66.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
